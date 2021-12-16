@@ -1,0 +1,46 @@
+Java - Object Oriented Programming Language
+-------------------------------------------
+
+class Test{
+public static void main(String[] args){
+ System.out.println("Hello, world');
+ }
+}
+
+After Installing Java into machine.
+
+Why we need to set the classpath/patch
+how to set the classpath?
+>javac 
+working fine.
+
+
+C:\Program Files\Java\jdk-16.0.2\bin
+
+goto->Env variable -> 
+
+
+comipler / Interpretator
+--------
+comipler is software it convert high-level code to low level binary format code.
+Human Readable format to machine readable binary format.
+
+Java is comipler based programming laguage.
+
+how to create java program?
+how to compile?  javac 
+how to execute?  java
+
+
+Java Programming features?
+
+Object Oriented Programming Language
+Simple
+platform indipendetn
+Architectural Neutral
+Portable
+Multithreaded
+Distributed and networked
+High Performance
+Secure & Robust
+
