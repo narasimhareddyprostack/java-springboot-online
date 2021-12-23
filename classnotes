@@ -43,4 +43,97 @@ Multithreaded
 Distributed and networked
 High Performance
 Secure & Robust
+==========================================
+Identifier
+A name in java program is called identifier. It can be 
+class name 
+variable name 
+method 
+label name 
 
+class Test{
+	public static void mian(String[] args){
+	int x = 100;
+   }
+}
+
+Rules to define identifier:
+The only allowed characters in java identifier are :
+
+a to Z 
+A to Z
+0 to 9 
+_
+& 
+
+If we are using any other characters we will get compile Time Error.
+
+class #Order{}  - Error 
+
+2)Identifier can't start with digit.
+
+class 9Test{}   - Not allowed   
+class Test9{}
+
+3)Identifier are case Sensitive 
+int a = 100;
+int A = 100;
+class Test{}
+class TEST{}
+
+4)There is no lenght limit for java identifiers.
+ 
+class Testttttttttttttttttttt{}
+
+5)We cant use Reserved words/keywords are identifiers.
+
+
+Which of the following are valid identifiers?
+
+9Test        - No 
+total_Order_Cost - Yes 
+_Test_      - Yes
+total#      - No 
+int         - No 
+Integer     - ok 
+
+Data Type
+-----------
+Java is Strictly Typed Programming Language.
+
+Java Programming Language - 3 Data types 
+1.Pre-defined / Premitive Data Types 
+2.Derived Data Types       
+3.User Defined Data Types / Object 
+
+Primitive Data Types 
+
+byte: - 
+====
+size : 8 bits (1 Byte)
+Max_Value: 127 
+Min_Value: -128
+Range : -128 to 127 
+
+short :
+==========
+size: 2 - byte
+Range :-32768  to 32767 
+
+summary of primitive Data Types:
+        
+byte    1-byte 
+short   2-byte 
+int     4-byte 
+long    8-byte 
+
+float    4-byte
+double   8-byte
+
+char     2-byte 
+boolean  N/A
+
+2.Derived Data Type 
+
+int size[] = {38, 40 ,42, 44};
+String names[] = {"Narasimha","Suchitra", "Srikanth"};
