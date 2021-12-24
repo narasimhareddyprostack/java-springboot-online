@@ -162,7 +162,7 @@ int[] a = new int[3];
 
 
 length - It represetns the size of array 
-       -It is final variable applicable for arrays
+        -It is final variable applicable for arrays.
 length() - it is final method applicable for string object.
         -It represents the no of characters in string.
 		
