@@ -137,3 +137,32 @@ boolean  N/A
 
 int size[] = {38, 40 ,42, 44};
 String names[] = {"Narasimha","Suchitra", "Srikanth"};
+
+
+3.User Defined Data Types(Objects)
+
+
+
+Arrays
+============
+
+Array is indexed collection of fixed no of homogenous data elements.
+
+-group of homogenous data elements as one entity - nothing but array
+
+Array Declaration
+1.int[] a;     a is int array 
+2.int a[];
+3.int []a;
+
+and 
+Array Creation
+
+int[] a = new int[3];
+
+
+length - It represetns the size of array 
+       -It is final variable applicable for arrays
+length() - it is final method applicable for string object.
+        -It represents the no of characters in string.
+		
