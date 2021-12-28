@@ -200,4 +200,138 @@ ratings++;
 char size = 's';
 size++;
 
+=================================================
+Operators - class 2 
+-------------------
+incr/decr operation  ++ --
+Relational  >, >= , <, <=
+Logical 
+Unary Operators
+Ternary Operators
+New, instanceOf 
+Bitwise Operators 
+
+String concatination Operator (+):
+-------------------------------
++ - overloaded operator in java.
+addition 
+concatination
+
+Relational Operators: > >=  < <= 
+---------------------------------
+apply Relational operators for every primitive data type
+except boolean
+we cant apply these relational operators for objects types
+
+
+class Test{
+   public  static void main(String[] args){
+        String ename1 = new String("Rahul");
+        String ename2 = new String("Rahul");
+        System.out.println(ename1 > ename2);
+    }   
+}
+
+
+Equality Operators:  ==  != 
+We apply equality operators for every primitive type.
+We apply equality operators for object reference also.
+
+class Test{
+   public  static void main(String[] args){
+            String ename1 = new String("Rahul");
+            String ename2 = new String("Rahul");
+            System.out.println(ename1 == ename2);  //false -ref comparision 
+            System.out.println(ename1.equals(ename2)); // true - content comparision
+            
+    }   
+}
+
+
+
+Assignment Operation : = 
+int x = 10; 
+
+1.simple Assignment  
+2.chined Assignment
+3.compound Assignment
+
+int a,b,c,d; //declartion
+a=b=c=d=20; //initilization
+
+
+compound assignment 
+------------------
++=
+-=
+*=
+
+Ternary Operator(? : )
+
+int a = 100;
+int b= 200;
+int emp_id = (a<b) ? 101 : 201
+
+
+
+class Test{
+   public  static void main(String[] args){
+           int a =100, b = 200;
+           int emp_id = a > b ? 101  : false? 200:300; 
+           System.out.println(emp_id);             
+    }   
+}
+
+Control flow
+------------
+describe the order in which statement will be execute at runtime.
+
+conditional flow 
+-----------------------
+if
+if-else 
+switch 
+
+iterative flow 
+----------------------
+for(){}
+while(){}
+do{}while()
+for each 
+
+Transfer Statement 
+-----------------------
+break
+continue 
+return 
+
+
+if statement:
+if(condition){
+//true block
+}
+
+
+if("salman khan"){
+	clg("Hello, Mr");
+}
+
+The argument to the if statement should be boolean type.
+If we ar providing any other type - we get compile time error.
+
+class Test{
+   public  static void main(String[] args){
+           if(1){
+                System.out.println("Hello, Good Evening");  
+           }
+                     
+    }   
+}
+
+
+Test.java:3: error: incompatible types: int cannot be converted to boolean
+           if(1){
+              ^
+1 error
+
 
