@@ -166,3 +166,38 @@ length - It represetns the size of array
 length() - it is final method applicable for string object.
         -It represents the no of characters in string.
 		
+Java Operators
+=====================
+Arithmatic 
+incr/decr operation  ++ --
+Relational  >, >= , <, <=
+Logical 
+Unary Operators
+Ternary Operators
+New, instanceOf 
+Bitwise Operators 
+
+
+int a = 10;
+
+++a;
+a++;
+
+
+
+Rules for Incr and Decr operators:
+
+We can apply increment and decrement only variables.
+not for constant values. 
+
+
+We can apply incr and decr operators 
+for every primitive data type except boolean.
+
+double ratings = 4.3;
+ratings++;
+
+char size = 's';
+size++;
+
+
