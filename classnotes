@@ -333,5 +333,100 @@ Test.java:3: error: incompatible types: int cannot be converted to boolean
            if(1){
               ^
 1 error
+===========================================
+Control Flow 
+
+Iterative flow 
+
+for(){}
+while 
+do while()
+for each loop 
 
 
+while: If we dont know the no of iterations in 
+advaance then we will go for / best suitable loop 
+is while
+
+do-while(): If we want execute loop statement atleast once then we go for do while.
+
+
+class Test{
+   public  static void main(String[] args){
+            int i=1;
+            do{
+            System.out.println("Hello,"); 
+            i++;
+            }while(i<=5);
+            /*  int i=1;
+             while(i<=5){
+                    System.out.println("Hello,"); 
+                    i++;
+             } */
+            /* for(int i=1; i<=5; i++){
+             System.out.println("Hello,"); 
+            }   */            
+    }   
+}
+
+
+do-while(): do something untile condition false.
+
+for-each():(Enhanced for Loop)
+Introduced in 1.5 (Java 5 version)
+
+- arrays and collections 
+for-each loop is the most convinent loop to retrieve the elemetns from array and collections.
+
+break Statement:
+-----------------
+switch
+loops(for, while, dowhile)
+
+
+continue: skip the current iteratin and continue the next iteration.
+
+
+Packages
+
+package com.greetlabs.user;
+public class A{}
+
+It is an mechanism to group related classes and interfaces 
+into a single module.
+
+The main purpose is 
+1)improve the modularity 
+2)Provide security
+3)To resolve naming conflicts 
+
+>javac -d . Test.java 
+-d - destination
+. - current working dir
+
+access modifierl
+
+class modifiers - public final abstract strict default
+
+class A{}
+- whether our class can accessed from any where or not?
+- Whether child class creation is possible for our class or not ?
+- whether instanciation is possible or not 
+
+  A a = new A()
+
+
+
+Applicable modifer for top-level classes :
+
+public 
+default
+final
+abstract
+strictfp
+
+Test.java 
+
+private class Test{}
+
+error: modifier private not allowed here
