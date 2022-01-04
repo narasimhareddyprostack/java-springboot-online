@@ -430,3 +430,309 @@ Test.java
 private class Test{}
 
 error: modifier private not allowed here
+
+Inner class - Level - access modifiers 
+
+public 
+private 
+protected
+final
+strictfp
+abstract 
+static 
+default 
+
+Top Class -Level Access modifiers 
+public 
+default 
+final
+abstract 
+strictfp 
+
+final Modifiers: 
+final modifer applicable for class , methods and variables.
+
+final class Outer{
+final void m1(){
+ final int x = 100 ;
+}
+}
+
+if method declared as the final then we are not allowed to override the method in child classes.
+
+class Parent{
+final void display(){}
+}
+class child extends Parent{
+void display(){
+}
+}
+
+
+class Parent{
+public final void display(){}
+}
+class child extends Parent{
+void display(){
+}
+}
+
+
+display() in child cannot override display() in Parent
+
+If a class declared as final then we can't create child classes.
+
+
+final class Parent{}
+class Child extends Parent{} 
+Compile-Time 
+cannot inherit from final Parent
+class Child extends Parent{}
+
+final class A{
+void m1(){}
+void m2(){}
+}  
+Note:Every method present inside a final class is always final by default.
+ but every variable present inside a final need not be final.
+ 
+Main Adv : we are achiving security as no one is allowed to to change our logic or implimentation 
+Dis Adv  : We are loosing inheritance & Polymorpism 
+
+
+abstract: abstract modifier applicable for 
+classes and method's but not for variable.  
+
+final    : Talk about implimentation
+abstract : Never Talks about implimentation
+
+abstract method: 
+
+
+int display(){}  - implimentation is available.
+abstract int display();   - No implimentation 
+
+
+abstract class Test {
+    abstract void display(){};    
+}
+abstract methods cannot have a body
+    abstract void display(){}; 
+
+	
+Note: 
+Illegal combination of modifers for methods 
+	
+abstract vs - final 
+              static 
+			  synchronizied 
+			  strictfp 
+			  native 
+			  private 
+			  
+error: illegal combination of modifiers: abstract and final
+abstract final void display(); //no implimentation 
+	
+abstract class:
+
+
+Interface:
+
+
+class Test{
+
+}
+Test t = new Test();
+instanciation/object creation .
+
+For any classtion(creation of object)
+then we will go for abstract class.
+
+for abstract classes instanciation is not possible.
+
+abstract class Test {
+   
+}
+class Display{
+Test t = new Test();
+}
+
+Test is abstract; cannot be instantiated.
+
+
+final - class, method, variable 
+      - child class - not possible 
+	  - method - override is possible.
+abstract - modifer applicable for classes and method.
+
+
+Interface: 100 % abstract class
+----------
+Any service requiremnt specification(SRS) is consider as interface.
+
+Adv:
+We can achive security.we  are not highlighting our internal implimentation.
+
+interface Test{
+void m1();
+void m2();
+}
+
+enchancement will become easy.
+
+Two different systems are communicating using interface.
+
+
+class to class - extends
+class to interace - implements 
+
+extends vs implements 
+---------------------
+an class can extends only one class at time.
+
+
+class P{}
+class C extends P{}
+
+an class can extends only one class at time.
+A class can implements any no of interfaces at a time. 
+
+interface A{} 
+interface B{}
+class Test implements A, B{
+}
+
+
+===========================================
+
+abstract class Test {
+abstract void m1();
+abstract void m2();
+void m3(){}
+}
+class Child extends Test {
+void m1(){}
+void m2(){}
+
+}
+
+an class can extends only one class at time.
+
+A class can implements any no of interfaces at a time. 
+
+3.A class can extend a class and 
+we can implements n no of interface.
+
+interface A{}
+interace B{}
+
+class Test{}
+class Demo extends Test implements A,B{}
+
+1.An class can extends only one class at time.
+
+2.A class can implements any no of interfaces at a time. 
+
+3.A class can extend a class and 
+we can implements n no of interface.
+
+4. An interace can extends any no of interface at a time.
+
+interface A{}
+interface B{} 
+interface C{}
+
+interface Main extends A,B,C{}
+
+
+
+
+interface A{
+    void m1();
+    public abstract void m2();
+}
+class Test implements A {
+  public void m1(){}
+  public void m2(){}
+}
+//wheather we are declaring or not every interface method is by default - 
+// abstract and public 
+
+interface  variable
+-----------------------
+
+interface A{
+  static public final  int x = 10;
+}
+class Demo implements A{
+ 
+    public static void main(String[] args){
+        
+        System.out.println(x);
+    }
+}
+
+/*
+Note1:interface method - public  and abstract
+Note2:interface variable- public, final, static
+*/
+
+public: To make variable available for every implimentation class 
+static: without existing object , we are going to access
+final: implimentation class can access variable, but not modify.
+
+
+
+===============================================
+class extends class. 
+class implements interface's  
+
+abstract class A{
+abstract void m1();
+public final int x = 100;
+}
+
+class B extends A {
+public void m1(){}
+public static void main(String[] args){
+	B b  = new B();
+	System.out.println(b.x);
+}
+}
+
+
+=========================================
+class - is template to construct objects.
+Once class is there - we can as many object with help new keywords.
+
+
+Object oriented Programming 
+class 
+this 
+constructor 
+Method Signature
+
+overriding
+overloading
+
+Data Hiding 
+
+Abstract
+Encapusaltion
+Inheritance
+polymoriphism
+
+
+
+Data Hiding?
+Hiding of of data , so that outside person cant access our data directly.
+
+-By using private modifers we can implement data hiding.
+
+class Test{
+	private int id = 101;
+}
+
+The main advatage of data hiding features we can achive security.
+
+
