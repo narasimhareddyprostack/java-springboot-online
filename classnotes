@@ -735,4 +735,13 @@ class Test{
 
 The main advatage of data hiding features we can achive security.
 
+Abstraction:
+
+Inheritance:
+class P{}
+class C extends P{}
+
+
+The main advatage of Inheritance is -code Reusability.
+
 
