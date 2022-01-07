@@ -745,3 +745,53 @@ class C extends P{}
 The main advatage of Inheritance is -code Reusability.
 
 
+=============================
+constructor: special method to initilize object values.
+
+Object creation is not enought, compulsary we should perform
+initilization.
+
+class Name , Constructor name should same.
+
+when ever we are creting an object , some piecel of code will executed automatially to perfrom initilization.
+
+new Product();
+
+
+main objective of constructor is to perform initilization for newly created object.
+
+Rules to define constructor?
+
+1.The name of the class and name of constructor must be matched.
+2.return type concept is not applicable.
+
+
+class Test{
+Test(){
+    System.out.println("constr");
+}
+void Test(){
+    System.out.println("method");
+}
+public static void main(String[] args){
+    new Test();
+}
+}
+
+applicable modifers for constructor is 
+ - public 
+ - private 
+ - protected 
+ - default 
+ 
+If we are trying to use any other modifers we will Compile time error.
+
+class Test{
+final Test(){
+    System.out.println("constr");
+}
+public static void main(String[] args){
+    new Test();
+}
+}
+
