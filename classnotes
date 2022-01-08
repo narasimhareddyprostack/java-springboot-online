@@ -795,3 +795,37 @@ public static void main(String[] args){
 }
 }
 
+Default Constructor
+------------------
+case 1:
+If we are not writing any constructor them compiler will always generate default constructor.
+
+class Test{
+
+}
+
+case 2: 
+If we are writing one constructor, then compiler
+ wont generate default constructor.
+a) It is always no argument constructor
+ class Test{
+    Test(){
+       super();
+    }
+}
+b) the access modifier of default constructor is same as class modifier.
+public class Test{
+    public Test(){
+       super();
+    }
+}
+
+===========================
+Encapusaltion:
+
+class Test{
+variable + methods 
+}
+-It is process of binding data and code into one unit.
+-It is process of binding data(instance variables) and code (methods) as one unit.
+- class - private variable and setter/getter - 
