@@ -829,3 +829,97 @@ variable + methods
 -It is process of binding data and code into one unit.
 -It is process of binding data(instance variables) and code (methods) as one unit.
 - class - private variable and setter/getter - 
+
+
+
+================================
+public    - global
+protected - same package + diff package - with sub class 
+default - same package  
+private - with in class only. 
+
+
+package pack1;
+class A{
+public void m1(){
+}
+}
+
+package pack2;
+import pack1.A;
+class B{
+A a = new A();
+a.m1();
+}
+
+package
+java.lang.*
+---------------------
+we are not required to import java.lang package explicitly
+because by default is available for every java program
+
+Test.java 
+
+import java.lang.*
+
+class Test{
+
+}
+
+What it contains?
+commonly required classes and interface available in java.lang package.
+
+Object class
+String
+StringBuffer 
+StringBuilder
+Wrapper Class
+
+class Object{
+}
+
+class A{}
+
+class B extends A{
+
+}
+
+Object class methods
+----------------------
+public String toString()
+public native int hashCode()
+public boolen equals(Object ojb)
+public final Class getClass()
+clone()
+finalize()
+wait()
+wait()
+wait()
+notify()
+notifyAll()
+
+toString()
+------------
+to get string representation of object.
+
+class Test{
+	public static void main(String[] args){
+		Test t = new Test();
+		System.out.print(t);
+		System.out.print(t.toString());
+	}
+}
+
+Object class toString();
+
+public String toString(){
+retrun getClass().getName+"@"
+       +Integer.toHexaString(hashCode());
+}
+
+
+
+Note: In String, StringBuffer class, all Wrapper classes 
+all collection classes 
+toString() method is overridden for meaning String notaiton.
+
