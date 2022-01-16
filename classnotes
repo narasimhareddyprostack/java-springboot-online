@@ -923,3 +923,91 @@ Note: In String, StringBuffer class, all Wrapper classes
 all collection classes 
 toString() method is overridden for meaning String notaiton.
 
+hashCode() - 
+JVM create unique number of object.
+
+Object class - equals()  - reference comparision.
+String, Wrapper classses - contenet comparision. 
+
+
+
+.equals() 
+===========
+Object class equals() method is ref comparision.
+String class equals() - is overridden for contetn comparision
+StringBuffer - equals() is not overridden.
+
+class Test{
+
+Test t1 = Test();
+Test t2 = Test();
+t1.equals(t2);   //Ref comparsion
+}
+
+String s1 = new String("Rahul");
+String s2 = new String("Rahul1");
+s1.equals(s2); //Content comparsion
+
+
+
+==  --> primitive(content comparion) and object(ref) 
+equals() --> object
+ 
+=========================
+Collection
+
+int[]  size = {38,40,44,46};
+Array are fixed in Size.
+
+Array hold only homogenous.
+
+Array hold primitive and object.
+
+int[]  size = {46,38,44,42}; //primitive int array 
+Employee[] e  = new Employee[5];
+e[0] = new Employee();
+e[1] = new Employee();
+
+e[3] = new User();
+
+
+Array can hold only homogenous data elements.
+
+Object[] obj = new Object[10];
+obj[0] = new Emplyee();
+obj[0] = new User();
+
+
+No Data Structure for arrays.
+We have to write code explicitly.
+
+
+Java - collection 
+
+Collection, Collections(C),  Collection framework.
+
+Array Limitations
+-----------------
+fixed
+hemogenous 
+Data Strutcture concept 
+
+
+collection Framework:
+=======================
+classes and interfaces which can be used to represents
+a group of object as one entity.
+
+imp interfaces  of collection framework
+-----------------
+Collection 
+List 
+Set 
+Queue 
+SortedSet 
+Map 
+SortedMap
+NavigableMap 
+
+java.util.*
+Collection Interface consider as root interace of collection framework
