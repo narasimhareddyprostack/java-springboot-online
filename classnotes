@@ -1011,3 +1011,33 @@ NavigableMap
 
 java.util.*
 Collection Interface consider as root interace of collection framework
+
+
+
+Collection Interface defines the most common methods which are applicable for any collection object.
+
+
+List:
+It is child interface of Collection
+If we want to represent a group of elements 
+where duplicates  are allowed and insertion order is presered.
+
+List - common used method.
+
+ArrayList:
+----------
+If we want represents group of Objects as one entity 
+where duplicates are allowed 
+insertion order is preserved 
+Heterogenous elements allowed 
+Null Insertion is possible .
+
+ArrayList al = new ArrayList();
+create one empty ArrayList and default initial capacity 10;
+
+ArrayList<Integer> al = new ArrayList<Integer>();
+
+
+ 
+
+
