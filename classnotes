@@ -1039,5 +1039,85 @@ ArrayList<Integer> al = new ArrayList<Integer>();
 
 
  
+Set 
+-----
+It is child interface of Collection.
+If we want to represent a group of elmements as one enity
+where duplicates are not allwed and insertion order is not preserved, then we will go for Set Interface.
+
+Note: Set Interface doest have any new methods.
 
 
+HashSet
+-underlying data structure is HashTable 
+-Duplicates are not allowed
+-Insertion order not preserved.
+- Null insertion is possible.
+Heterogenous is allowed
+
+LinkedHashSet
+
+==========================
+Map 
+
+-If you want to represent  a group of key:value pair 
+then we should go for Map.
+
+Map is not child interface of Collection.
+
+Both keys and values are objects only.
+
+Duplicates keys are not allowed but dupicate values allowed.
+Key:value pair called as Entry
+
+Map Interface Methods
+----------------------
+Object put(Object key, Object key)
+
+-To Add one entry(key:value), If key is already available
+then old value will replaced by new value.
+
+void putAll(Map m)
+Object get(Object key)
+Object remove(object key)
+boolean constansKey(object key)
+boolean constansValues(object value)
+
+boolean isEmtpy()
+int size() - to return no of entries(key:value pair)
+
+void clear()
+
+set keySet()
+set entySet()
+Collection values()
+
+
+Entry(I)
+--------------
+Each key-value pair is called as Entry.
+
+interface Map{
+	interface Entry{
+		Object getKey()
+		Object getValue()
+		Object setValue(Object value)
+	}
+}
+
+
+HashMap:
+--------
+Duplicate keys are not allowed, but values are allowed
+The underlying data structure is HashTable 
+Heterogenous objects are allowed
+Insertion order not preserved.
+null insertion is possible for key(only once).
+
+HashMap hm = new HashMap();
+create one empty HashMap object with default initial capacity
+is 16 and fill ratio is 0.75
+
+HashMap hm = new HashMap(100);
+
+HashMap hm = new HashMap(100, 0.9);
