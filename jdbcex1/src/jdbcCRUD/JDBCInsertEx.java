@@ -8,10 +8,11 @@ import java.sql.Statement;
 public class JDBCInsertEx {
 
 	public static void main(String[] args) {
+		
 		String url = "jdbc:mysql://localhost:3306/test";
 		String username="root";
 		String password="root";
-		String sqlSt = "INSERT INTO EMPLOYEE VALUES(104, 'ROBERT', 65000)";
+		String sqlSt = "INSERT INTO EMPLOYEE VALUES(105, 'ROBERT', 65000)";
 		try {
 			Connection cn= DriverManager.getConnection(url,username,password);
 			Statement st= cn.createStatement();
