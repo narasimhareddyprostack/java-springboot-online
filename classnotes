@@ -1164,3 +1164,154 @@ toString()
 getMessage()
 
 
+
+JDBC API -
+
+set of classes and interface used by java program 
+to connect db to perfrom CRUD Operation 
+
+java.sql 
+        - DriverManager - (C) 
+		- Connection   - (I)
+		- Statement    - (I)  -
+		- Resultset    - (I)
+		-PreparedStatement
+		-CallbableStement Interface
+
+javax.sql 
+RowSet Interface 
+
+
+
+JDBC URL :
+jdbc:oracle:thin@localhost:1521/test 
+jdbc:mysql://localhost:3306/test
+
+jdbc protocol
+db - product  name 
+ip Address / localhost 
+port number 
+db system id (sid )
+
+DriverManger (class)
+
+- load the JDB Driver into memory and to connect to DB 
+  This class contains methods 
+
+- getConnection()
+- registerDriver()
+
+Connection Interface - statement object 
+
+createStatement ()
+prepareStatement()
+prepareCall()
+
+
+
+Connection cn = DriverManager.getConnection()
+
+
+Steps 
+---------------
+dowload driver software 
+load and register(test) Class.forName() /optional
+Establish connection to database 
+
+create statement object 
+execture sql commnads 
+process the result 
+-------------------------------------------
+Connection cn= DriverManager.getConnection(url,username,password)
+
+
+=========================================
+Java 8 Features? - consice  code 
+---------------------------------
+What is interface?
+
+public interface Circle{
+	//abstract methods 
+	public abstract void m1();
+	public abstract void m2();
+	
+}
+
+Functional Programming?
+
+Functional Interface?
+SAM - Sinble Abstract Method 
+
+FI - is iterface which contains a SAM is called FI.
+
+how to create FI?
+
+public interface Circle{
+	public abstract void calculateArea(double radis);
+}
+
+
+Java 8 Features 
+------------------
+Functional Interface 
+Lambda Express    
+Default Methods 
+Predefined Functional Interface 
+  a)Function    - apply()
+  b)BiFunction
+  b)Consumer BiConsumer 
+  c)Predicate BiPredicate  - test()
+  d)Suplier 
+  
+  Its contains only - single Abstract method 
+Double colon operator 
+Streams API 
+Date and Time API 
+
+===========================
+Predicate - boolean result 
+Consumer  - no result 
+
+Function -  input and output 
+
+Supplicer - no input only supply
+
+
+What Predicate - Pre-defined FI 
+
+@FuncitonInterface
+Interface Predicate{  
+  public abstract boolean test();
+}
+
+class Test  {
+  Predicate<String>  a = ()->{}
+  Predicate<String>  a = str->str.length>4;
+  a.test("Welcome");
+}
+==================
+@FunctionInterface
+Interface Consumer{
+  public abstract Object accept(Object);
+
+}
+
+@FunctionInterface
+interface Function{
+
+public abstract Object apply(Object);
+
+}
+
+Function<in,out>  fun  = ()->{ }
+Function<input, output > fun  = (a)->{ a* 10  }
+
+fun.apply(10);
+
+
+
+function add(a,b){
+   return a+b
+}
+=====================================
+

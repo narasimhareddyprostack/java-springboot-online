@@ -1,0 +1,2 @@
+module Java8staticandDefault {
+}
