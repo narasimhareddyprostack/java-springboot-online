@@ -4,11 +4,11 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
             <Link to="/home" className="navbar-brand"> Ecom Application</Link>
-            <div className="ml-auto">
+
+            <div className="mr-auto">
                 <ul className="navbar-nav">
-                    <li className="nav-list">
-                        <Link to="/user" className="nav-link">User</Link>
-                    </li>
+                    <li className="nav-list"><Link to="/login" className="nav-link">User</Link></li>
+                    <li className="nav-list"><Link to="/signup" className="nav-link">Registration</Link></li>
                 </ul>
             </div>
         </nav>
